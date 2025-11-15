@@ -58,9 +58,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="index.html" class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center">
                         <img src="assets/images/logo.png" alt="affordable-soc2.com Logo" class="h-10 w-auto">
-                        <span class="text-xl font-bold text-gray-900">affordable-soc2.com</span>
                     </a>
                 </div>
                 
@@ -89,22 +88,71 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-24 pb-16 bg-gradient-to-br from-cyan-50 to-purple-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                    Get <span class="text-primary">SOC2 Audit Ready</span> in 14 Days
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-600 mb-8">
-                    Affordable, fast, and stress-free SOC2 compliance for growing companies
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#email-signup" class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition">
-                        Get Started Today
-                    </a>
-                    <a href="#how-it-works" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-50 transition">
-                        Learn More
-                    </a>
+    <section class="pt-32 pb-24 bg-gradient-to-br from-cyan-50 to-purple-50 min-h-[85vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left: Text & Form -->
+                <div class="space-y-8">
+                    <div>
+                        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                            Get <span class="text-primary">SOC2 Audit Ready</span> in 14 Days
+                        </h1>
+                        <p class="text-xl md:text-2xl text-gray-600 mb-4">
+                            Affordable, fast, and stress-free SOC2 compliance for growing companies
+                        </p>
+                        <p class="text-lg text-gray-500">
+                            With <span class="font-semibold text-gray-700">affordable-soc2.com</span>, achieve certification at a fraction of traditional costs
+                        </p>
+                    </div>
+                    
+                    <!-- Email Form -->
+                    <form 
+                        class="space-y-4" 
+                        name="hero-email"
+                        method="POST"
+                        data-netlify="true"
+                        action="https://calendar.app.google/JRWrp2fPdzt28PA17"
+                    >
+                        <input type="hidden" name="form-name" value="hero-email">
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <input 
+                                type="email"
+                                name="email"
+                                placeholder="Enter your work email" 
+                                class="flex-1 px-6 py-4 rounded-lg text-gray-900 border-2 border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                required
+                            >
+                            <button 
+                                type="submit" 
+                                class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition whitespace-nowrap"
+                            >
+                                Get Started
+                            </button>
+                        </div>
+                        <p class="text-sm text-gray-500">Free consultation • No credit card required</p>
+                    </form>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#how-it-works" class="text-center bg-white text-primary border-2 border-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-cyan-50 transition">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right: Video Animation -->
+                <div class="lg:order-last order-first">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <video 
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                            class="w-full h-auto"
+                        >
+                            <source src="assets/digital-age.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,9 +199,17 @@
             <p class="text-xl text-white/90 mb-8">
                 Join 100+ companies that achieved SOC2 compliance the easy way
             </p>
-            <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" id="hero-email-form">
+            <form 
+                class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" 
+                name="hero-signup"
+                method="POST"
+                data-netlify="true"
+                action="https://calendar.app.google/JRWrp2fPdzt28PA17"
+            >
+                <input type="hidden" name="form-name" value="hero-signup">
                 <input 
-                    type="email" 
+                    type="email"
+                    name="email"
                     placeholder="Enter your work email" 
                     class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-accent"
                     required
@@ -181,7 +237,7 @@
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="assets/images/soc2.png" alt="SOC2 Compliance Badge" class="rounded-lg shadow-xl">
+                    <img src="assets/images/logo.png" alt="SOC2 Compliance Badge" class="rounded-lg shadow-xl">
                 </div>
                 <div class="space-y-6">
                     <div class="flex gap-4">
@@ -496,9 +552,17 @@
                 <p class="text-gray-300 mb-8">
                     Get a free consultation and custom roadmap for your business
                 </p>
-                <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" id="footer-email-form">
+                <form 
+                    class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" 
+                    name="footer-signup"
+                    method="POST"
+                    data-netlify="true"
+                    action="https://calendar.app.google/JRWrp2fPdzt28PA17"
+                >
+                    <input type="hidden" name="form-name" value="footer-signup">
                     <input 
-                        type="email" 
+                        type="email"
+                        name="email"
                         placeholder="Enter your work email" 
                         class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
                         required
