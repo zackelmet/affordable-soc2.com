@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable SOC2 Audit Readiness - Get Certified in 14 Days</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#06b6d4',      // Cyan
+                        secondary: '#a78bfa',    // Light purple
+                        accent: '#fbbf24',       // Soft yellow
+                        offwhite: '#fafaf9'      // Off-white
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-offwhite">
+    
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/logo.png" alt="affordable-soc2.com Logo" class="h-8 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="hidden text-2xl font-bold text-primary">affordable-soc2.com</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="blog.html" class="text-gray-700 hover:text-primary transition">Blog</a>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition">Let's Chat</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="blog.html" class="block text-gray-700 hover:text-primary transition">Blog</a>
+                <a href="#contact" class="block bg-primary text-white px-6 py-2 rounded-lg text-center hover:bg-secondary transition">Let's Chat</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-cyan-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Get <span class="text-primary">SOC2 Audit Ready</span> in 14 Days
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                    Affordable, fast, and stress-free SOC2 compliance for growing companies
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#email-signup" class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition">
+                        Get Started Today
+                    </a>
+                    <a href="#how-it-works" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-50 transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Say Goodbye To Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                Say Goodbye To...
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <img src="assets/icon-expensive.png" alt="Expensive" class="w-10 h-10" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-3xl\'>💸</span>';">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Expensive Audits</h3>
+                    <p class="text-gray-600">No more $50k+ audit fees. Get affordable SOC2 compliance without breaking the bank.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <img src="assets/icon-time.png" alt="Time" class="w-10 h-10" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-3xl\'>⏰</span>';">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Months of Preparation</h3>
+                    <p class="text-gray-600">Skip the 6-12 month timeline. We get you audit-ready in just 14 days.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <img src="assets/icon-confusion.png" alt="Confusion" class="w-10 h-10" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-3xl\'>😵</span>';">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Confusing Requirements</h3>
+                    <p class="text-gray-600">Stop guessing what you need. We provide clear, step-by-step guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Signup Section -->
+    <section id="email-signup" class="py-16 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Get Started?
+            </h2>
+            <p class="text-xl text-white/90 mb-8">
+                Join 100+ companies that achieved SOC2 compliance the easy way
+            </p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" id="hero-email-form">
+                <input 
+                    type="email" 
+                    placeholder="Enter your work email" 
+                    class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-accent"
+                    required
+                >
+                <button 
+                    type="submit" 
+                    class="bg-accent text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition"
+                >
+                    Get Started
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Value Prop Section - SOC2 in 14 Days -->
+    <section id="how-it-works" class="py-16 bg-offwhite">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    SOC2 Compliance in Under 14 Days
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Our proven framework gets you audit-ready faster than anyone else
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="assets/images/soc2.png" alt="SOC2 Compliance Badge" class="rounded-lg shadow-xl">
+                </div>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Assessment</h3>
+                            <p class="text-gray-600">We evaluate your current security posture and identify gaps in 24 hours.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-bold">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Implementation</h3>
+                            <p class="text-gray-600">Get pre-built policies, procedures, and templates customized for your business.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-accent text-gray-900 rounded-full flex items-center justify-center font-bold">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Audit Ready</h3>
+                            <p class="text-gray-600">We prepare all documentation and evidence needed for your auditor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                Why Choose Us?
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-offwhite p-6 rounded-lg shadow-sm border border-primary/10">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <img src="assets/icon-affordable.png" alt="Affordable" class="w-8 h-8" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-2xl\'>💰</span>';">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Affordable</h3>
+                    <p class="text-gray-600">70% less expensive than traditional consultants</p>
+                </div>
+                <div class="bg-offwhite p-6 rounded-lg shadow-sm border border-secondary/10">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                        <img src="assets/icon-fast.png" alt="Fast" class="w-8 h-8" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-2xl\'>⚡</span>';">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Lightning Fast</h3>
+                    <p class="text-gray-600">14 days from start to audit-ready</p>
+                </div>
+                <div class="bg-offwhite p-6 rounded-lg shadow-sm border border-accent/10">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <img src="assets/icon-expert.png" alt="Expert" class="w-8 h-8" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-2xl\'>🎓</span>';">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Expert Guidance</h3>
+                    <p class="text-gray-600">Dedicated compliance specialists</p>
+                </div>
+                <div class="bg-offwhite p-6 rounded-lg shadow-sm border border-primary/10">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <img src="assets/icon-guarantee.png" alt="Guarantee" class="w-8 h-8" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-2xl\'>✅</span>';">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Pass Guarantee</h3>
+                    <p class="text-gray-600">100% money-back guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="py-16 bg-offwhite">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">
+                What You Get
+            </h2>
+            <p class="text-xl text-gray-600 text-center mb-12">
+                Everything you need to pass your SOC2 audit
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-primary">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Pre-built Policies</h3>
+                        <p class="text-gray-600">40+ customizable security policies</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-secondary">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Evidence Collection</h3>
+                        <p class="text-gray-600">Automated evidence gathering tools</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-primary">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Gap Analysis</h3>
+                        <p class="text-gray-600">Detailed security posture assessment</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-secondary">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Audit Preparation</h3>
+                        <p class="text-gray-600">Readiness review & mock audits</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-primary">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Expert Support</h3>
+                        <p class="text-gray-600">Dedicated compliance consultant</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 text-secondary">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Ongoing Monitoring</h3>
+                        <p class="text-gray-600">Continuous compliance tracking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="py-16 bg-gradient-to-br from-cyan-50 via-purple-50 to-yellow-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">
+                Our Process
+            </h2>
+            <p class="text-xl text-gray-600 text-center mb-12">
+                From kickoff to audit-ready in 14 days
+            </p>
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="flex gap-6">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            D1-2
+                        </div>
+                        <div class="w-1 flex-1 bg-primary/30 mt-2"></div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm flex-1 mb-8 border border-primary/20">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Initial Assessment</h3>
+                        <p class="text-gray-600">Kickoff call, gap analysis, and scoping of your SOC2 requirements.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="flex gap-6">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            D3-7
+                        </div>
+                        <div class="w-1 flex-1 bg-secondary/30 mt-2"></div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm flex-1 mb-8 border border-secondary/20">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Policy & Controls Setup</h3>
+                        <p class="text-gray-600">Deploy pre-built policies, configure security controls, and implement required procedures.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="flex gap-6">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-accent text-gray-900 rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            D8-11
+                        </div>
+                        <div class="w-1 flex-1 bg-accent/30 mt-2"></div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm flex-1 mb-8 border border-accent/20">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Evidence Collection</h3>
+                        <p class="text-gray-600">Gather and organize all required audit evidence and documentation.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="flex gap-6">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                            D12-14
+                        </div>
+                    </div>
+                    <div class="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm flex-1 border border-primary/20">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Final Review & Handoff</h3>
+                        <p class="text-gray-600">Mock audit, final review, and complete handoff of audit-ready documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                Frequently Asked Questions
+            </h2>
+            <div class="space-y-4">
+                <div class="faq-item border border-gray-200 rounded-lg hover:border-primary/50 transition">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-semibold text-gray-900">How much does it cost?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-600">Our pricing starts at $9,995 for the complete SOC2 audit readiness package, which is 70% less than traditional consulting firms. We offer transparent, flat-rate pricing with no hidden fees.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border border-gray-200 rounded-lg hover:border-secondary/50 transition">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-semibold text-gray-900">What type of SOC2 do you support?</span>
+                        <svg class="faq-icon w-6 h-6 text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-600">We support both SOC2 Type I and Type II audits. We'll help you determine which type is right for your business during the initial consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border border-gray-200 rounded-lg hover:border-accent/50 transition">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-semibold text-gray-900">Can you really get us ready in 14 days?</span>
+                        <svg class="faq-icon w-6 h-6 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-600">Yes! Our proven framework and pre-built templates allow us to get you audit-ready in 14 days. This timeline applies to the readiness phase; the actual audit by your auditor typically takes an additional 2-4 weeks.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border border-gray-200 rounded-lg hover:border-primary/50 transition">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-semibold text-gray-900">Do you connect us with auditors?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-600">Yes, we have partnerships with vetted SOC2 auditors and can make introductions. However, you're also welcome to work with your own preferred auditor.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border border-gray-200 rounded-lg hover:border-secondary/50 transition">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-semibold text-gray-900">What if we don't pass the audit?</span>
+                        <svg class="faq-icon w-6 h-6 text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-600">We offer a 100% money-back guarantee. If you follow our process and don't pass your audit, we'll refund your full payment. That's how confident we are in our system.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border border-gray-200 rounded-lg hover:border-accent/50 transition">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="font-semibold text-gray-900">What size companies do you work with?</span>
+                        <svg class="faq-icon w-6 h-6 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="text-gray-600">We specialize in startups and small to mid-size businesses (5-500 employees). Our process is optimized for companies getting their first SOC2 certification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Email Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Footer Email Signup -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">
+                    Start Your SOC2 Journey Today
+                </h2>
+                <p class="text-gray-300 mb-8">
+                    Get a free consultation and custom roadmap for your business
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" id="footer-email-form">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your work email" 
+                        class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
+                        required
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-cyan-600 transition"
+                    >
+                        Get Started Free
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="text-gray-300 hover:text-primary transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">SOC2 Guide</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">hello@affordable-soc2.com</li>
+                        <li class="text-gray-300">(555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 affordable-soc2.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

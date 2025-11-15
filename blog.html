@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC2 Compliance Blog - affordable-soc2.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#06b6d4',      // Cyan
+                        secondary: '#a78bfa',    // Light purple
+                        accent: '#fbbf24',       // Soft yellow
+                        offwhite: '#fafaf9'      // Off-white
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-offwhite">
+    
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/logo.png" alt="affordable-soc2.com Logo" class="h-8 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="hidden text-2xl font-bold text-primary">affordable-soc2.com</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="blog.html" class="text-primary font-semibold">Blog</a>
+                    <a href="index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition">Let's Chat</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="blog.html" class="block text-primary font-semibold">Blog</a>
+                <a href="index.html#contact" class="block bg-primary text-white px-6 py-2 rounded-lg text-center hover:bg-cyan-600 transition">Let's Chat</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-cyan-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    SOC2 Compliance <span class="text-primary">Resources & Insights</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600">
+                    Learn everything you need to know about SOC2 compliance, security best practices, and audit preparation
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Cards Section -->
+    <section class="py-16 bg-offwhite">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Blog Card 1 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition border border-primary/10">
+                    <img src="assets/blog-1.png" alt="Blog" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-primary to-cyan-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">📋</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>November 10, 2025</span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition">
+                            <a href="blogs/soc2-guide-2025.html">The Complete Guide to SOC2 Compliance in 2025</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Everything you need to know about SOC2 Type I and Type II audits, from preparation to certification.
+                        </p>
+                        <a href="blogs/soc2-guide-2025.html" class="text-primary font-semibold hover:text-cyan-600 transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition border border-secondary/10">
+                    <img src="assets/blog-2.png" alt="Blog" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-secondary to-purple-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">�</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>November 8, 2025</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-secondary transition">
+                            <a href="blogs/reduce-audit-costs.html">How to Reduce SOC2 Audit Costs by 70%</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Learn the strategies that successful startups use to achieve SOC2 compliance without breaking the bank.
+                        </p>
+                        <a href="blogs/reduce-audit-costs.html" class="text-secondary font-semibold hover:text-purple-600 transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition border border-accent/10">
+                    <img src="assets/blog-3.png" alt="Blog" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-accent to-yellow-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">⭐</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>November 5, 2025</span>
+                            <span>•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-accent transition">
+                            <a href="blogs/security-controls.html">Top 10 Security Controls for SOC2 Compliance</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            The essential security controls you need to implement before starting your SOC2 audit.
+                        </p>
+                        <a href="blogs/security-controls.html" class="text-accent font-semibold hover:text-yellow-600 transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 4 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="assets/blog-4.png" alt="Type I vs Type II" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-red-500 to-red-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">⚖️</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>November 1, 2025</span>
+                            <span>•</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition">
+                            <a href="blogs/type1-vs-type2.html">SOC2 Type I vs Type II: Which Do You Need?</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Understand the key differences between Type I and Type II audits and determine which is right for your business.
+                        </p>
+                        <a href="blogs/type1-vs-type2.html" class="text-primary font-semibold hover:text-secondary transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 5 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="assets/blog-5.png" alt="Common Mistakes" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-orange-500 to-orange-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">⚠️</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>October 28, 2025</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition">
+                            <a href="blogs/common-mistakes.html">5 Common SOC2 Mistakes That Delay Certification</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Avoid these common pitfalls that can add months to your SOC2 compliance timeline.
+                        </p>
+                        <a href="blogs/common-mistakes.html" class="text-primary font-semibold hover:text-secondary transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 6 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="assets/blog-6.png" alt="Automation" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-teal-500 to-teal-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">🤖</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>October 25, 2025</span>
+                            <span>•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition">
+                            <a href="blogs/evidence-collection.html">Automating Evidence Collection for SOC2</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            How automation can save you hundreds of hours during SOC2 audit preparation and monitoring.
+                        </p>
+                        <a href="blogs/evidence-collection.html" class="text-primary font-semibold hover:text-secondary transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 7 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="assets/blog-7.png" alt="Trust Center" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-indigo-500 to-indigo-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">🏢</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>October 22, 2025</span>
+                            <span>•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition">
+                            <a href="blogs/trust-center.html">Building a Trust Center After SOC2 Certification</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Showcase your compliance to customers with a professional security trust center.
+                        </p>
+                        <a href="blogs/trust-center.html" class="text-primary font-semibold hover:text-secondary transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 8 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="assets/blog-8.png" alt="Vendor Management" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-pink-500 to-pink-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">🤝</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>October 18, 2025</span>
+                            <span>•</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition">
+                            <a href="blogs/vendor-management.html">Vendor Management for SOC2 Compliance</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            How to assess and manage third-party vendors to meet SOC2 requirements.
+                        </p>
+                        <a href="blogs/vendor-management.html" class="text-primary font-semibold hover:text-secondary transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Card 9 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="assets/blog-9.png" alt="Continuous Monitoring" class="w-full h-48 object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.blog-placeholder').style.display='flex';">
+                    <div class="blog-placeholder hidden bg-gradient-to-br from-yellow-500 to-yellow-600 w-full h-48 items-center justify-center">
+                        <span class="text-white text-4xl">📊</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                            <span>October 15, 2025</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition">
+                            <a href="blogs/continuous-monitoring.html">Maintaining SOC2 Compliance Year-Round</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Best practices for continuous monitoring and maintaining your SOC2 certification.
+                        </p>
+                        <a href="blogs/continuous-monitoring.html" class="text-primary font-semibold hover:text-secondary transition inline-flex items-center">
+                            Read More 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Email Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Footer Email Signup -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">
+                    Start Your SOC2 Journey Today
+                </h2>
+                <p class="text-gray-300 mb-8">
+                    Get a free consultation and custom roadmap for your business
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto" id="footer-email-form">
+                    <input 
+                        type="email" 
+                        placeholder="Enter your work email" 
+                        class="flex-1 px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
+                        required
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-secondary transition"
+                    >
+                        Get Started Free
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="text-gray-300 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">SOC2 Guide</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">hello@affordablesoc2.com</li>
+                        <li class="text-gray-300">(555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Affordable SOC2. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

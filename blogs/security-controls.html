@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Security Controls for SOC2 Compliance - affordable-soc2.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#06b6d4',
+                        secondary: '#a78bfa',
+                        accent: '#fbbf24',
+                        offwhite: '#fafaf9'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif']
+                    }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-offwhite">
+    
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <img src="../assets/logo.png" alt="affordable-soc2.com Logo" class="h-8 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="hidden text-2xl font-bold text-primary">affordable-soc2.com</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../blog.html" class="text-primary font-semibold">Blog</a>
+                    <a href="../index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition">Let's Chat</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="../blog.html" class="block text-primary font-semibold">Blog</a>
+                <a href="../index.html#contact" class="block bg-primary text-white px-6 py-2 rounded-lg text-center hover:bg-cyan-600 transition">Let's Chat</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="pt-24 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="mb-8">
+                <a href="../blog.html" class="text-primary hover:text-cyan-600 transition">← Back to Blog</a>
+            </nav>
+
+            <div class="mb-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                    <span>November 5, 2025</span>
+                    <span>•</span>
+                    <span>6 min read</span>
+                    <span>•</span>
+                    <span class="text-accent">Security</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Top 10 Security Controls for SOC2 Compliance
+                </h1>
+                <p class="text-xl text-gray-600">
+                    The essential security controls every company needs to pass their SOC2 audit.
+                </p>
+            </div>
+
+            <div class="mb-12">
+                <div class="bg-gradient-to-br from-accent to-yellow-600 rounded-xl h-96 flex items-center justify-center">
+                    <span class="text-white text-6xl">🔒</span>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-700 mb-8">
+                    SOC2 auditors look for specific security controls that demonstrate you're protecting customer data. These 10 controls are non-negotiable—missing even one can delay or derail your audit.
+                </p>
+
+                <div class="space-y-10">
+                    <!-- Control 1 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Multi-Factor Authentication (MFA)</h2>
+                                
+                                <div class="bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        81% of hacking-related breaches use stolen or weak passwords. MFA adds a critical second layer of protection.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>MFA enabled for all production system access</li>
+                                    <li>MFA required for administrative accounts</li>
+                                    <li>MFA enabled for employee email and collaboration tools</li>
+                                    <li>Evidence of MFA usage (login logs)</li>
+                                </ul>
+
+                                <div class="bg-cyan-50 border border-cyan-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Enable MFA on AWS/GCP/Azure</li>
+                                        <li>□ Enforce MFA for GitHub/GitLab</li>
+                                        <li>□ Require MFA for Google Workspace/Microsoft 365</li>
+                                        <li>□ Enable MFA for Slack, Zoom, and other SaaS tools</li>
+                                        <li>□ Document MFA policy in your security handbook</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 2 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Access Control & Least Privilege</h2>
+                                
+                                <div class="bg-gradient-to-r from-secondary/10 to-secondary/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        Over-permissioned users are a major security risk. Everyone should have the minimum access needed to do their job.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>Role-based access control (RBAC) implementation</li>
+                                    <li>Quarterly access reviews conducted</li>
+                                    <li>Production access limited to specific roles</li>
+                                    <li>Documentation of who has access to what</li>
+                                </ul>
+
+                                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Define roles (Admin, Developer, Support, etc.)</li>
+                                        <li>□ Map permissions to roles</li>
+                                        <li>□ Audit current access across all systems</li>
+                                        <li>□ Remove unnecessary permissions</li>
+                                        <li>□ Schedule quarterly access reviews</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 3 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Logging & Monitoring</h2>
+                                
+                                <div class="bg-gradient-to-r from-accent/10 to-accent/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        You can't detect or investigate security incidents without proper logging. This is foundational to incident response.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>Centralized logging enabled for all critical systems</li>
+                                    <li>Logs retained for at least 90 days</li>
+                                    <li>Monitoring alerts configured for security events</li>
+                                    <li>Evidence of log review processes</li>
+                                </ul>
+
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">Critical Systems to Log</p>
+                                    <div class="grid md:grid-cols-2 gap-3 text-sm text-gray-700">
+                                        <div>
+                                            <p class="font-semibold mb-1">Infrastructure</p>
+                                            <ul class="space-y-1">
+                                                <li>• AWS CloudTrail</li>
+                                                <li>• Database access logs</li>
+                                                <li>• Load balancer logs</li>
+                                                <li>• VPN access logs</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold mb-1">Applications</p>
+                                            <ul class="space-y-1">
+                                                <li>• Authentication events</li>
+                                                <li>• Failed login attempts</li>
+                                                <li>• Data access logs</li>
+                                                <li>• Configuration changes</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-cyan-50 border border-cyan-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Enable CloudTrail/equivalent on cloud accounts</li>
+                                        <li>□ Set up centralized log aggregation (CloudWatch, Datadog, etc.)</li>
+                                        <li>□ Configure alerts for suspicious activity</li>
+                                        <li>□ Document log retention policy (90+ days)</li>
+                                        <li>□ Schedule monthly log reviews</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 4 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Encryption at Rest & in Transit</h2>
+                                
+                                <div class="bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        Unencrypted data is vulnerable to breaches. Encryption ensures that even if data is accessed, it's unreadable without keys.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>TLS 1.2+ for all data in transit</li>
+                                    <li>Encryption enabled for databases and file storage</li>
+                                    <li>Encryption enabled for backups</li>
+                                    <li>Key management procedures documented</li>
+                                </ul>
+
+                                <div class="bg-cyan-50 border border-cyan-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Enable HTTPS for all web traffic</li>
+                                        <li>□ Enable RDS encryption (AWS) or equivalent</li>
+                                        <li>□ Enable S3 bucket encryption</li>
+                                        <li>□ Encrypt database backups</li>
+                                        <li>□ Use encrypted connections for APIs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 5 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Vulnerability Management</h2>
+                                
+                                <div class="bg-gradient-to-r from-secondary/10 to-secondary/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        Unpatched vulnerabilities are low-hanging fruit for attackers. Regular scanning and patching keeps systems secure.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>Quarterly vulnerability scans performed</li>
+                                    <li>Critical vulnerabilities patched within 30 days</li>
+                                    <li>Vulnerability remediation process documented</li>
+                                    <li>Scan reports and remediation evidence</li>
+                                </ul>
+
+                                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Enable automated OS patching</li>
+                                        <li>□ Run quarterly vulnerability scans (Nessus, Qualys, etc.)</li>
+                                        <li>□ Use Dependabot or Snyk for dependency scanning</li>
+                                        <li>□ Create patch management policy</li>
+                                        <li>□ Document vulnerability remediation process</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 6 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">6</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Incident Response Plan</h2>
+                                
+                                <div class="bg-gradient-to-r from-accent/10 to-accent/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        When (not if) a security incident occurs, having a documented response plan minimizes damage and recovery time.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>Documented incident response procedures</li>
+                                    <li>Clear roles and responsibilities defined</li>
+                                    <li>Contact information for incident response team</li>
+                                    <li>Evidence of annual testing/tabletop exercises</li>
+                                </ul>
+
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">Key Components</p>
+                                    <ol class="space-y-2 text-sm text-gray-700">
+                                        <li><strong>1. Detection:</strong> How you identify incidents</li>
+                                        <li><strong>2. Containment:</strong> Steps to limit damage</li>
+                                        <li><strong>3. Eradication:</strong> Removing the threat</li>
+                                        <li><strong>4. Recovery:</strong> Restoring normal operations</li>
+                                        <li><strong>5. Post-Incident:</strong> Review and lessons learned</li>
+                                    </ol>
+                                </div>
+
+                                <div class="bg-cyan-50 border border-cyan-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Create incident response playbook</li>
+                                        <li>□ Define incident severity levels</li>
+                                        <li>□ Assign incident response team roles</li>
+                                        <li>□ Document escalation procedures</li>
+                                        <li>□ Conduct annual tabletop exercise</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 7 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">7</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Data Backup & Disaster Recovery</h2>
+                                
+                                <div class="bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        Data loss can be catastrophic. Regular backups and a tested recovery plan ensure business continuity.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>Automated daily backups configured</li>
+                                    <li>Backups stored in separate geographic location</li>
+                                    <li>Backup restoration tested quarterly</li>
+                                    <li>Recovery Time Objective (RTO) and Recovery Point Objective (RPO) defined</li>
+                                </ul>
+
+                                <div class="bg-cyan-50 border border-cyan-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Enable automated database backups</li>
+                                        <li>□ Configure cross-region backup replication</li>
+                                        <li>□ Test backup restoration monthly</li>
+                                        <li>□ Document disaster recovery procedures</li>
+                                        <li>□ Define RTO/RPO targets</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 8 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">8</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Change Management</h2>
+                                
+                                <div class="bg-gradient-to-r from-secondary/10 to-secondary/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        Uncontrolled changes to production systems can introduce security gaps or cause outages.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>Documented change management process</li>
+                                    <li>Approval required before production changes</li>
+                                    <li>Changes tracked in ticketing system</li>
+                                    <li>Evidence of change reviews</li>
+                                </ul>
+
+                                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Implement pull request process for code changes</li>
+                                        <li>□ Require code review before merging</li>
+                                        <li>□ Use ticketing system (Jira, Linear, etc.)</li>
+                                        <li>□ Document approval workflows</li>
+                                        <li>□ Track infrastructure changes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 9 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">9</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Security Awareness Training</h2>
+                                
+                                <div class="bg-gradient-to-r from-accent/10 to-accent/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        Employees are often the weakest link in security. Regular training reduces human error and phishing risks.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>Annual security training for all employees</li>
+                                    <li>Training completion tracked and documented</li>
+                                    <li>Training covers phishing, password security, data handling</li>
+                                    <li>New hire security onboarding</li>
+                                </ul>
+
+                                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Select training platform (KnowBe4, Securiti, etc.)</li>
+                                        <li>□ Schedule annual training for all staff</li>
+                                        <li>□ Include security training in onboarding</li>
+                                        <li>□ Track completion rates</li>
+                                        <li>□ Conduct phishing simulations quarterly</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control 10 -->
+                    <div class="bg-white border-2 border-gray-200 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">10</div>
+                            <div class="flex-1">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-3">Vendor Risk Management</h2>
+                                
+                                <div class="bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg p-4 mb-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-1">Why It Matters</p>
+                                    <p class="text-gray-700">
+                                        Third-party vendors can introduce security risks. You're responsible for their security practices when they handle your data.
+                                    </p>
+                                </div>
+
+                                <p class="text-gray-700 mb-4"><strong>What Auditors Check:</strong></p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                                    <li>Vendor inventory maintained</li>
+                                    <li>Security assessments conducted for critical vendors</li>
+                                    <li>Contracts include security requirements</li>
+                                    <li>Annual vendor reviews performed</li>
+                                </ul>
+
+                                <div class="bg-cyan-50 border border-cyan-200 rounded-lg p-4">
+                                    <p class="text-sm font-semibold text-gray-900 mb-2">✅ Implementation Checklist</p>
+                                    <ul class="space-y-1 text-sm text-gray-700">
+                                        <li>□ Create vendor inventory spreadsheet</li>
+                                        <li>□ Classify vendors by risk (critical, high, medium, low)</li>
+                                        <li>□ Request SOC2 reports from critical vendors</li>
+                                        <li>□ Include security terms in vendor contracts</li>
+                                        <li>□ Schedule annual vendor security reviews</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan-50 to-purple-50 rounded-xl p-8 mt-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Implementation Timeline</h2>
+                    <p class="text-gray-700 mb-6">
+                        Here's a realistic timeline for implementing these controls:
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-primary">Week 1-2</div>
+                            <div class="text-gray-700">MFA (#1), Encryption (#4), Backups (#7)</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-secondary">Week 3-4</div>
+                            <div class="text-gray-700">Access Controls (#2), Logging (#3), Change Management (#8)</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-accent">Week 5-6</div>
+                            <div class="text-gray-700">Vulnerability Management (#5), Security Training (#9)</div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-24 font-bold text-primary">Week 7-8</div>
+                            <div class="text-gray-700">Incident Response (#6), Vendor Management (#10)</div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <p class="text-lg font-semibold text-gray-900 mb-4">
+                            Need help implementing these controls?
+                        </p>
+                        <a href="../index.html#email-signup" class="inline-block bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition">
+                            Get Your Free Implementation Guide
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Start Your SOC2 Journey Today</h2>
+                <p class="text-gray-300 mb-8">Get audit-ready in just 14 days</p>
+                <a href="../index.html#email-signup" class="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-cyan-600 transition">
+                    Get Started Free
+                </a>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 affordable-soc2.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

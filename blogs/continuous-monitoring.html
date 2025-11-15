@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintaining SOC2 Compliance Year-Round - affordable-soc2.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#06b6d4',
+                        secondary: '#a78bfa',
+                        accent: '#fbbf24',
+                        offwhite: '#fafaf9'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif']
+                    }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased bg-offwhite">
+    
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <img src="../assets/logo.png" alt="affordable-soc2.com Logo" class="h-8 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span class="hidden text-2xl font-bold text-primary">affordable-soc2.com</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../blog.html" class="text-primary font-semibold">Blog</a>
+                    <a href="../index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-cyan-600 transition">Let's Chat</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="../blog.html" class="block text-primary font-semibold">Blog</a>
+                <a href="../index.html#contact" class="block bg-primary text-white px-6 py-2 rounded-lg text-center hover:bg-cyan-600 transition">Let's Chat</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="pt-24 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="mb-8">
+                <a href="../blog.html" class="text-primary hover:text-cyan-600 transition">← Back to Blog</a>
+            </nav>
+
+            <div class="mb-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                    <span>October 15, 2025</span>
+                    <span>•</span>
+                    <span>5 min read</span>
+                    <span>•</span>
+                    <span class="text-yellow-500">Continuous Monitoring</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Maintaining SOC2 Compliance Year-Round
+                </h1>
+                <p class="text-xl text-gray-600">
+                    Best practices for continuous monitoring and keeping your certification valid.
+                </p>
+            </div>
+
+            <div class="mb-12">
+                <div class="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl h-96 flex items-center justify-center">
+                    <span class="text-white text-6xl">📊</span>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-xl text-gray-700 mb-8">
+                    Getting SOC2 certified is hard. Staying compliant is even harder. Many companies pass their initial audit only to fail their renewal because they let controls lapse. Here's how to maintain compliance without burning out your team.
+                </p>
+
+                <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4">The SOC2 Lifecycle</h2>
+                
+                <div class="bg-gradient-to-br from-cyan-50 to-purple-50 rounded-xl p-8 mb-8">
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Preparation (Months 1-3)</h3>
+                                <p class="text-gray-700">Implement controls, policies, and automation. Get ready for audit.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Observation Period (Months 4-9)</h3>
+                                <p class="text-gray-700">Controls operate and evidence is collected. Auditor monitors.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Audit & Certification (Month 10)</h3>
+                                <p class="text-gray-700">Final audit, report issued, celebrate! 🎉</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Maintenance (Months 11-22)</h3>
+                                <p class="text-gray-700 font-semibold">← You are here. Don't let controls slip!</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Renewal Audit (Month 22+)</h3>
+                                <p class="text-gray-700">Annual renewal audit. Repeat the cycle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4">Monthly Compliance Tasks</h2>
+
+                <div class="bg-white border-2 border-primary rounded-xl p-8 mb-8">
+                    <h3 class="text-xl font-bold text-primary mb-6">Every Month (2-3 hours)</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Review access logs for anomalies</p>
+                                <p class="text-sm text-gray-600">Check for unusual login patterns, failed authentications, or suspicious activity</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 30 min | Tools: CloudWatch, Datadog, SIEM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Verify backups completed successfully</p>
+                                <p class="text-sm text-gray-600">Check database backups, config backups, and data replication status</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 15 min | Tools: AWS Backup, automated reports</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Review security alerts and incidents</p>
+                                <p class="text-sm text-gray-600">Investigate any security alerts, document incidents, track remediation</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 30 min | Tools: PagerDuty, Slack alerts, incident tracker</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Check vulnerability scan results</p>
+                                <p class="text-sm text-gray-600">Review latest scans, verify critical vulnerabilities are patched</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 30 min | Tools: Tenable, Qualys, Snyk</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Monitor compliance dashboard</p>
+                                <p class="text-sm text-gray-600">Check your compliance platform for any failing controls or missing evidence</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 15 min | Tools: Vanta, Secureframe, custom dashboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border-2 border-secondary rounded-xl p-8 mb-8">
+                    <h3 class="text-xl font-bold text-secondary mb-6">Quarterly Tasks (4-6 hours)</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Conduct access reviews</p>
+                                <p class="text-sm text-gray-600">Review all user access across systems, revoke unnecessary permissions</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 2-3 hours | Who: Security lead + managers</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Run vulnerability scans</p>
+                                <p class="text-sm text-gray-600">External and internal vulnerability assessments of infrastructure</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 1 hour (review results) | Who: Engineering lead</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Review and update policies</p>
+                                <p class="text-sm text-gray-600">Check if security policies need updates based on business changes</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 1 hour | Who: Compliance owner</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Test backup restoration</p>
+                                <p class="text-sm text-gray-600">Actually restore from backup to verify recovery process works</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 1-2 hours | Who: DevOps/Infrastructure team</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Vendor security reviews</p>
+                                <p class="text-sm text-gray-600">Check for updated SOC2 reports from critical vendors</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 1 hour | Who: Procurement/Compliance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border-2 border-accent rounded-xl p-8 mb-8">
+                    <h3 class="text-xl font-bold text-accent mb-6">Annual Tasks (8-12 hours)</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Security awareness training</p>
+                                <p class="text-sm text-gray-600">All employees complete annual security training</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 1 hour per employee | Tools: KnowBe4, Securiti</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Risk assessment</p>
+                                <p class="text-sm text-gray-600">Comprehensive review of business and technology risks</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 4-6 hours | Who: Leadership + compliance team</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Penetration testing</p>
+                                <p class="text-sm text-gray-600">External pen test of production environment</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 2-3 hours (internal time) | Cost: $5-15k</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">Incident response tabletop exercise</p>
+                                <p class="text-sm text-gray-600">Simulate a security incident to test your response plan</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: 2-3 hours | Who: Entire leadership team</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div class="flex-1">
+                                <p class="font-semibold text-gray-900">SOC2 renewal audit</p>
+                                <p class="text-sm text-gray-600">Annual audit to renew your SOC2 certification</p>
+                                <p class="text-xs text-gray-500 mt-1">Time: Variable | Cost: $20-30k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4">Automation is Key to Sustainability</h2>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Without Automation vs With Automation</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg p-6">
+                            <h4 class="font-semibold text-red-600 mb-3">❌ Manual Approach</h4>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>• 40+ hours/month on compliance</li>
+                                <li>• High risk of missing tasks</li>
+                                <li>• Team burnout and turnover</li>
+                                <li>• Evidence collection crunch before audit</li>
+                                <li>• Controls lapse unnoticed</li>
+                                <li>• Failed renewal audits</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 border-2 border-green-500">
+                            <h4 class="font-semibold text-green-600 mb-3">✅ Automated Approach</h4>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>• 5-10 hours/month on compliance</li>
+                                <li>• Automated reminders and alerts</li>
+                                <li>• Sustainable, low-touch process</li>
+                                <li>• Evidence collected continuously</li>
+                                <li>• Real-time control monitoring</li>
+                                <li>• Smooth renewal audits</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4">Build a Compliance Calendar</h2>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <p class="text-gray-700 mb-4">
+                        Use this calendar template to stay on track (Google Calendar, Notion, or your project management tool):
+                    </p>
+
+                    <div class="space-y-3 text-sm">
+                        <div class="flex gap-3 p-3 bg-blue-50 rounded">
+                            <span class="font-semibold text-blue-900 w-32">1st of month:</span>
+                            <span class="text-gray-700">Review previous month's security logs and incidents</span>
+                        </div>
+                        <div class="flex gap-3 p-3 bg-purple-50 rounded">
+                            <span class="font-semibold text-purple-900 w-32">15th of month:</span>
+                            <span class="text-gray-700">Check backup success rates and vulnerability scans</span>
+                        </div>
+                        <div class="flex gap-3 p-3 bg-cyan-50 rounded">
+                            <span class="font-semibold text-cyan-900 w-32">End of Q1/Q3:</span>
+                            <span class="text-gray-700">Access reviews, policy updates, backup restoration tests</span>
+                        </div>
+                        <div class="flex gap-3 p-3 bg-green-50 rounded">
+                            <span class="font-semibold text-green-900 w-32">End of Q2/Q4:</span>
+                            <span class="text-gray-700">Same as Q1/Q3 + vendor reviews</span>
+                        </div>
+                        <div class="flex gap-3 p-3 bg-yellow-50 rounded">
+                            <span class="font-semibold text-yellow-900 w-32">Q4 (Oct/Nov):</span>
+                            <span class="text-gray-700">Annual tasks: Training, risk assessment, pen test, tabletop</span>
+                        </div>
+                        <div class="flex gap-3 p-3 bg-red-50 rounded">
+                            <span class="font-semibold text-red-900 w-32">Q1 (Jan/Feb):</span>
+                            <span class="text-gray-700">SOC2 renewal audit preparation and fieldwork</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4">Signs Your Compliance Program is Slipping</h2>
+
+                <div class="space-y-4 mb-8">
+                    <div class="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">🚨 Red Flag: You can't remember the last access review</h3>
+                        <p class="text-gray-700 text-sm">
+                            If it's been more than 3 months, you're overdue. Former employees might still have access.
+                        </p>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">🚨 Red Flag: No one is checking logs or alerts</h3>
+                        <p class="text-gray-700 text-sm">
+                            Security monitoring only works if someone actually reviews the alerts. Silence doesn't mean safety.
+                        </p>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">🚨 Red Flag: Policies haven't been updated in a year+</h3>
+                        <p class="text-gray-700 text-sm">
+                            Your business evolved. Your tech stack changed. Your policies should reflect current reality.
+                        </p>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">🚨 Red Flag: You're not collecting evidence continuously</h3>
+                        <p class="text-gray-700 text-sm">
+                            If you wait until audit time to gather evidence, you'll be scrambling and likely missing critical documentation.
+                        </p>
+                    </div>
+
+                    <div class="bg-red-50 border-l-4 border-red-500 rounded-r-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">🚨 Red Flag: No one owns compliance</h3>
+                        <p class="text-gray-700 text-sm">
+                            If compliance is "everyone's job," it's actually no one's job. Assign clear ownership.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4">Quick Wins to Stay Compliant</h2>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-12">
+                    <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-900 mb-3">💡 Set up Slack reminders</h3>
+                        <p class="text-sm text-gray-700">
+                            Create a #compliance channel with automated reminders for monthly and quarterly tasks.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-900 mb-3">💡 Use compliance dashboards</h3>
+                        <p class="text-sm text-gray-700">
+                            Tools like Vanta/Secureframe show real-time control status. Check it weekly.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-900 mb-3">💡 Make it part of eng rituals</h3>
+                        <p class="text-sm text-gray-700">
+                            Add a "security/compliance" section to sprint planning. Normalize it.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6">
+                        <h3 class="font-semibold text-gray-900 mb-3">💡 Dedicate 1 person part-time</h3>
+                        <p class="text-sm text-gray-700">
+                            Even 20% of one person's time is enough if you have automation.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-4">Your First 90 Days Post-Certification</h2>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <ol class="space-y-4">
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 font-bold text-primary">Week 1:</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Celebrate and communicate</p>
+                                <p class="text-sm text-gray-700">Share the win company-wide. Launch trust center. Update website.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 font-bold text-primary">Week 2-4:</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Set up maintenance systems</p>
+                                <p class="text-sm text-gray-700">Create compliance calendar, assign owners, configure automation alerts.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 font-bold text-primary">Month 2:</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">First monthly review</p>
+                                <p class="text-sm text-gray-700">Execute your monthly tasks. Adjust processes based on what works.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="flex-shrink-0 font-bold text-primary">Month 3:</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">First quarterly review</p>
+                                <p class="text-sm text-gray-700">Access reviews, vulnerability scans, policy updates. Make it routine.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan-50 to-purple-50 rounded-xl p-8 mt-12 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Continuous Compliance Made Easy</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Our platform monitors your controls 24/7 and alerts you before anything breaks. No manual work required.
+                    </p>
+                    <a href="../index.html#email-signup" class="inline-block bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition">
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Start Your SOC2 Journey Today</h2>
+                <p class="text-gray-300 mb-8">Get audit-ready in just 14 days</p>
+                <a href="../index.html#email-signup" class="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-cyan-600 transition">
+                    Get Started Free
+                </a>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 affordable-soc2.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
